@@ -93,8 +93,107 @@
     echo '<br>';
 
 
+        // constants
+    // $x = 10;
+    // define("_GREETING", "Hello World!");
+
+    // echo $x;
+    // var_dump(_GREETING);
+
+    //   const _GREETING2 = "Hello People!";
+
+    //   echo _GREETING2;
+    // function test(){
+    //   echo _GREETING2;
+    // }
+
+    // test();
+
+    // echo $x;
+    // unset(_GREETING);
+    // echo _GREETING;
+
+    // PHP OPERATORS
+    // ARITHMETIC
+    // + ADDITION
+    // echo 10 + 3 + 100, "<br>";
+    // // - SUBTRACTION
+    // echo 26 - 10 - 3, "<br>";
+
+    // // ADD AND SUBTRACT
+    // echo 26 - 10 + 100 -3, "<br>"; // LEFT TO RIGHT
+    // // * MULTIPLICATION
+    // echo 13 * 13 * 13, "<br>";
+    // // / DIVISION
+    // echo 169 / 13, "<br>";
+
+    // // MULTIPLICATION AND DIVISION
+    // echo 169 / 13 * 1, "<br>";
+    // // ADD AND DIVISION
+    // echo 169 + 1000 / 13, "<br>"; // multi/div first before add/min
+    // // % MODULUS
+    // echo 41 % 14, "<br>";
+    // // ** EXPONENT
+    // echo 13 ** 10, "<br>";
+
+    // ASSIGNMENT
+
+    // = EQUALS
+    // $x = 10;
+    // // +=
+    // $x = $x + 10;
+    // $x += 10;
+    // // -=
+    // $x = $x - 10;
+    // $x -= 10;
+
+    // // /=
+    // $x = $x / 10;
+    // $x /= 10;
+
+    // // *=
+    // $x = $x * 10;
+    // $x *= 10;
+
+    // echo $x;
+
+    // COMPARISON
+    // == is equals to if similar value
+    // var_dump(10 == "10");
+    // // === is identical to similar value and data types
+    // var_dump(10 === "10");
+    // // != not equals to is not similar value
+    // var_dump(10 != "10");
+    // var_dump(10 <> "10");
+    // // !== not identical to not similar value and not similar data type
+    // var_dump(10 !== "10");
+    // // < less than to check if first value is less than second value
+    // var_dump(10 < 11);
+    // // > greater than to check if first value is more than second value
+    // var_dump(10 > 11);
+    // // <= checks if less than or equals to the next value
+    // var_dump(10 <= 11);
+    // // >= checks if greater than or equals to the next value
+    // var_dump(10 >= 11);
+    // // <=> spaceship checks if first value is less than or equals or greater than second value
+    // var_dump(1 <=> 2);
+    // var_dump(3 <=> 4);
+    // var_dump(5 <=> 6);
+
+    // INCRE/DECRE
+    // PRE-INCREMENT
+    // $x = 10;
+    // echo ++$x, "<br>";
+    // // POST INCREMENT
+    // $y = 10;
+    // echo $y++, "<br>";
+    // echo $y, "<br>";
+    // // DECRE
+    // echo --$y, "<br>";
+    // echo --$y, "<br>";
 
 
     ?>
 </body>
+
 </html>
