@@ -191,9 +191,85 @@
     // // DECRE
     // echo --$y, "<br>";
     // echo --$y, "<br>";
+    $gender = "Male";
+    $x = $gender == "Male" ? "Mr.": "Ms.";
 
+    echo $gender == "Male" ? "Mr.": "Ms.";
+
+    echo($x);
+
+    $color = "R" ?? "Red"; 
+    echo $color;
+
+    $students = array(
+        array("name"=> "Mary", "gender" => "Female"),
+        array("name"=> "Ray", "gender" => "Male"),
+        array("name"=> "Hardy", "gender" => "Male"),
+    );
+
+    foreach ($students as $student){
+        echo $student["name"] . "<br>";
+        echo "Gender: ".$student["gender"] . "<br>";
+    }
+
+    foreach ($students as $student){
+        echo "<h1>Name: ".$student["name"] . "<h1>";
+        echo "<ul>";
+            echo "<li>Hello</li>"
+        echo "</ul>";
+    }
+
+       foreach ($students as $student){
+        echo "<h1>Name: ".$student["name"] . "<h1>";
+        echo "<ul>";
+            echo "<li>". $student["gender"] ."</li>";
+            echo "<li>". $student["age"] ."</li>";
+        echo "</ul>";
+    }
+
+    
 
     ?>
+
+    <?php foreach ($students as $student){ ?>
+        <h1><?php echo $student['name']; ?></h1>
+        <ul>
+            <li><?php echo $student['gender']; ?></li>
+            <li><?php echo $student['age']; ?></li>
+        </ul>
+    <?php } ?>
+
+    
+        <table>
+        <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+        </tr>
+        <?php foreach ($students as $student){ ?>
+            <tr>
+                <td><?php echo $student['name']; ?></td>
+                <td><?php echo $student['gender']; ?></td>
+                <td><?php echo $student['age']; ?></td>
+            </tr>
+        <?php } ?>
+    </table>
+        <table>
+        <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+        </tr>
+        <?php foreach ($students as $student){ ?>
+            <?php foreach ($student as $value){ ?>
+                <tr>
+                    <td><?php echo $value; ?></td>
+                </tr>
+            <?php } ?>
+        <?php } ?>
+    </table>
+    
 </body>
 
 </html>
+
